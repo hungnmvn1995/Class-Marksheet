@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Funix Assignment3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/function.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target">
+	     <a class="navbar-brand" href="single.html">Funi<span>Xter</span></a>
+	  </nav>
+
+	  <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 pb-5 text-center">
+            <h1 class="mb-3 bread">Class Marksheet</h1>
+            <p class="breadcrumbs"><span class="mr-2"><a href="#data">Student list</a></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="comment-form-wrap">
+      <form action="#" class="p-5 bg-light">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="math">Math *</label>
+          <input type="number" class="form-control" id="math">
+        </div>
+        <div class="form-group">
+          <label for="physics">Physics *</label>
+          <input type="number" class="form-control" id="physics">
+        </div>
+        <div class="form-group">
+          <label for="chemistry">Chemistry *</label>
+          <input type="number" class="form-control" id="chemistry">
+        </div>
+        <div class="form-group">
+          <button id="submit" onclick="input()" type="submit" class="btn py-3 px-4 btn-primary">Post Student</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="container">
+        <table id="data" class="table table-bordered table-condensed table-striped">
+          <thead>
+            <th>Name</th>
+            <th>Math</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Average</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="container pb-5">
+          <button onclick="avg()" type="button" class="btn py-3 px-4 btn-primary">Average</button>
+          <button id="expectation" type="button" class="btn py-3 px-4 btn-primary">Good Student</button>
+        </div>
+    </section>
+    <footer class="container"></footer>
+  </body>
+</html>
